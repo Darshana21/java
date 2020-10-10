@@ -1,0 +1,32 @@
+import java.io.*;
+public class Employee {
+   public String name;
+   private int age;
+  private String city;
+ 
+   public Employee (String empName,int empage,String empcity) {
+      name = empName;
+      age=empage;
+      city=empcity;
+   }
+
+   
+   public void setEmp(String empName,int empage,String empcity) {
+        name = empName;
+      age=empage;
+      city=empcity;
+   }
+
+  
+   public void printEmp() {
+      System.out.println("name  : " + name );
+      System.out.println("age :" + age);
+      System.out.println("city :" + city);
+   }
+
+   public static void main(String args[]) {
+      Employee e1 = new Employee();
+      e1.setEmp("Saurabh",23,"chennai");
+      e1.printEmp();
+   }
+}
