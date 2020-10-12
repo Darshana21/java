@@ -1,0 +1,135 @@
+Questtion 1-
+
+
+package com.student;
+
+import java.util.Scanner;
+
+public class Result {
+
+	public static void main(String[] args) {
+		
+
+	   int maths,phy,chem,eng,evs,total;
+	   char grade;
+	   float pc;
+	   
+	   Scanner sc=new Scanner(System.in);
+	   
+	   System.out.println("Enter the marks (out of 100): ");
+	   System.out.println("maths=");	  
+	   maths=sc.nextInt();
+	   	   
+	   System.out.println("phy=");
+	   phy=sc.nextInt();
+	   
+	   System.out.println("chem=");
+	   chem=sc.nextInt();
+	   	   
+	   System.out.println("eng=");
+	   eng=sc.nextInt();
+	   
+	   System.out.println("evs=");
+	   evs=sc.nextInt();
+	   
+	   total=maths+phy+chem+eng+evs;
+	   pc= (total/5.00f);
+	   
+	   System.out.println("percentage=" +pc);
+
+	   
+	   if(pc>=80.0) {
+		   System.out.println("Grade=A");
+	   }
+	   else if(pc>=60.0 && pc< 80.0) {
+		   System.out.println("Grade=B");
+	   }
+	   else if(pc>=35.0 && pc< 60.0) {
+		   System.out.println("Grade=B");
+	   }
+	   else
+	   {
+		   System.out.println("Grade=D");
+	   }
+		   
+	   
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+Question 2-
+
+
+package com.employee;
+
+import java.util.Scanner;
+import java.util.Calendar;
+public class Employee {
+
+	public static void main(String[] args) {
+	
+		String name;
+		int dob,mob,yob;
+		
+		float msal,asal;	
+		
+		double tax = 0;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the details");
+		System.out.println("name :");
+		name=sc.nextLine();
+		
+		System.out.println("Date of birth");
+		 dob =sc.nextInt();
+		 
+		 System.out.println("month of birth");
+		  mob =sc.nextInt();
+		  
+		  System.out.println("Year of birth");
+		 yob =sc.nextInt();
+		 
+		 System.out.println("Monthly Salary");
+		 msal =sc.nextFloat();
+		 
+		 
+		 asal = msal*12f;
+		 System.out.println("Annual salary :" +asal);
+		 
+		 if(asal >= 500000) {
+			 	tax= asal * 20/100;
+		 }
+		 else if(asal >= 400000 && asal<500000) {
+			 	tax= asal * 15/100;
+		 }
+		 else 	 if(asal >= 300000 && asal<400000) {
+			 	tax= asal * 10/100;
+		 }
+		 if(asal >= 200000 && asal<300000) {
+			 	tax= asal * 5/100;
+		 }
+		
+		System.out.println("tax :"+tax);
+		
+		
+		
+		
+	}
+
+}
+
